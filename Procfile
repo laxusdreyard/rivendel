@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 public/
+web bin/rails server -p $PORT -e $RAILS_ENV
