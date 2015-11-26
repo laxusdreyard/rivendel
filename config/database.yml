@@ -9,11 +9,9 @@ development:
   pool: 5
   timeout: 5000
 
-test:
-  <<: *default
-  database: db/test
-
 production:
-  <<: *default
-  database: db/production
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
